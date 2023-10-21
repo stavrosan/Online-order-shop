@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
+
+.container{
+    top: 10px;
+    position: relative;
+    height: 80vh;
+}
+
+
+.right {
+    position: absolute;
+    top: 200px;
+    right: 20px;
+    width: 300px;
+    border: 3px solid black;
+    padding: 10px;
+  }
+
+  h1{
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+
+  }
+
+  .btn{
+    margin-bottom: 10px;
+  }
+
+  .submit{
+    margin: 0px 60px;
+  }

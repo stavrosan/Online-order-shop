@@ -1,0 +1,11 @@
+footer{
+    padding: 10px 10px;
+    background-color: black;
+}
+
+footer>p{
+    color:aliceblue;
+      text-align: center;
+      margin-top: 4px;
+   
+}

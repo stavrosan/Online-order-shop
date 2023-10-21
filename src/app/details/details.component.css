@@ -1,0 +1,20 @@
+.container{
+    margin: 20px 0px;
+    height: 90vh;
+}
+
+.card{
+margin-left: 150px;
+
+}
+.card img{
+    height: 200px;
+    width: 2000px;
+    max-width:100%;
+}
+
+.btn{
+    cursor: pointer;
+    color: white;
+    transition: all 200ms ease;
+}

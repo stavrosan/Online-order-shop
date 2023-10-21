@@ -1,0 +1,74 @@
+/* Import font for styling*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
+
+
+.hero{
+height: 70vh;
+}
+
+.img1{
+background-size: cover; 
+background-repeat: no-repeat;
+height: 60vh;
+width: 100%;
+background-position: center;
+position: relative;
+}
+
+.mb-3{
+margin-top: 5vh;
+font-family: 'Great Vibes', cursive;
+font-size: 10vh;
+color: aliceblue;
+}
+
+h3{
+color: aliceblue;
+}
+
+h1{
+font-family: 'Great Vibes', cursive;
+font-size: 10vh;
+}
+     
+
+.btn{
+margin-right: 6px;
+}
+
+/* styling the main content*/
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+
+.container::after {
+content: "";
+clear: both;
+
+}
+
+.float-start{
+width: 30%;
+height: 40%;
+margin-bottom: 20px;
+margin-right: 20px;
+}
+
+.display-3{
+margin: 30px;
+}
+
+.script{
+padding: 10px;
+margin-left: 5px;
+text-align: justify;
+}
+
+.card{
+    margin-left: 200px;
+    margin-bottom: 10px;
+}
+
+

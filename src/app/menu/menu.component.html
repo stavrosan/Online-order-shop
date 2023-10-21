@@ -1,0 +1,26 @@
+
+<h1 class="display-1 text-center">Our specialties</h1>
+<hr>
+<!--Printing the menu-list with a loop using bootstrap cards-->
+
+<div class="container">
+<div class="row row-cols-lg-3 row-cols-md-2">
+<div *ngFor="let value of menuArr; index as i">
+<div class="card text-left p-3" style="max-width:100;">
+<img src="{{value.image}}" class="card-img-top" alt="">
+<div class="card-body">
+<h3 class="card-title">{{value.name}}</h3>
+<hr>
+<h5 class="price">€{{value.price}}</h5>
+<hr>
+
+<!--when we click a product(dish) to see its index in the url with the routerlink. 
+    Showing buttons if availability is true. If==false, hide the button and message diplayed "Not available"-->
+<div class="card-title text-start" *ngIf="value.availability==true">
+    <button routerLink="details/{{i}}" class="btn btn-primary">Details</button>
+    <button class="btn btn-success">Order</button></div>
+    <div *ngIf="value.availability==false"><h3 class="text-danger">Not available</h3></div>
+</div>
+</div>
+</div>
+</div>
