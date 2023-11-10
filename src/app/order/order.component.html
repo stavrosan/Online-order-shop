@@ -1,28 +1,30 @@
-<div class="container"><h1 class="text-center">Cart items</h1>
+<div class="container"><h1>Cart items</h1>
 
-<!--Display of items added to the cart with for loop-->
-<div *ngFor="let val of order">
-<div class="card mb-3" style="max-width: 540px;">
-   <div class="row">
-      <div class="col-md-4">
-      <img src="{{val.image}}" class="img-fluid rounded-start mx-2 my-2" alt="...">
-      </div>
+<!--Display of items added to the cart with for loop <h2 class="text-center bg-dark text-white p-3
+   fw-bold rounded mb-10" style="width: 40%;">Shopping Basket</h2>-->
+
+
+<div class="card" *ngFor="let val of order, index as i">
+      <img src="{{val.image}}"alt="...">
       <div class="col-md-8">
       <div class="card-body">
-      <h5 class="card-title">{{val.name}}</h5>
-      <p class="card-text">{{val.price}}€</p>
-      <p class="card-text"><small class="text-body-secondary">{{val.description}}</small></p>
-      </div>
-      </div>
-      </div>
+      <h4 class="card-title">{{val.name}}</h4>
+      <h5 class="card-text">€ {{val.price}}</h5>
+      <p>{{val.qtty}} item(s)</p>
+      <!-- Display of items added to the cart with for loop<p>{{(this.qtty)}}</p> -->
+      <p>{{val.description}}</p>
     </div>
-    </div>
-  
-
+      </div>
+      </div>
+    
+    
+    
+    
 
   
 <section class="right">
 <h2 class="text-center">Summary</h2>
+<hr>
 <p>Total without discount: {{ total.toFixed(2) }}€</p>
 
 <div *ngIf="total>40">
@@ -34,10 +36,10 @@
 
 <div>Service charge: {{(total*(serviceTip/100)).toFixed(2)}}€</div>
 <hr>
-<div>Total amount(including VAT): {{((discountTotal())+(total*(serviceTip/100))).toFixed(2)}}€</div>
+<div class="totAmount">Total amount (including VAT): {{((discountTotal())+(total*(serviceTip/100))).toFixed(2)}}€</div>
 </section>
 
-</div>
+
 
 <div class="submit">
 <h1>Order form</h1>
@@ -54,4 +56,5 @@
   </div>
   <button type="submit" class="btn btn-primary">Purchase</button>
 </form>
+</div>
 </div>

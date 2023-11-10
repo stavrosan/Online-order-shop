@@ -2,19 +2,18 @@
 
 <!--Menu display with description and button with onclick event which adds items to the cart-->
 
-<div class="card mb-3" style="max-width: 60%; max-height: 60%;">
-<div class="row g-0">
-<div class="col-md-4"> 
-<img src="{{food.image}}" class="img-fluid h-100" alt="...">
+<div class="card">
+<div class="card-image"> 
+<img src="{{food.image}}">
 </div>
-<div class="col-md-8">
-<div class="card-body">
-<h5 class="card-title">{{food.name}}</h5>
-<p class="card-text">{{food.price}}€</p>
-<p class="card-text"><small class="text-body-secondary">{{food.description}}</small></p>
-<button class="btn btn-success" (click)="addToCart()">Add to cart</button>
+<div class="card-text">
+<h2 class="card-title">{{food.name}}</h2>
+<p class="card-body">{{food.description}}</p>
 </div>
+<div class="card-price">€ {{food.price}}</div>
+<button (click)="addToCart()">Add to cart</button>
 </div>
 </div>
-</div>
-</div>
+
+
+

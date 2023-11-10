@@ -1,31 +1,108 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
 
 .container{
-    top: 10px;
-    position: relative;
-    height: 80vh;
+margin: 10px 0px;
+position: relative;
+max-height: max-content;
+min-height: 100vh; /* We choose min-height and max-content, so when the items are added footer stays on the bottom and the page stretches*/
 }
 
 
 .right {
-    position: absolute;
-    top: 200px;
+position: fixed;
+top: 200px;
+right: 20px;
+width: 350px;
+border: 3px solid black;
+padding: 10px;
+}
+
+h1{
+font-family: 'Great Vibes', cursive;
+font-weight: bold;
+text-align: center;
+}
+
+.card{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  margin-bottom:60px;
+}
+.card>div{
+  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+}
+
+.card-image{
+  width:400px;
+  height:250px;
+}
+.card-image>img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:bottom;
+}
+
+.card-body{
+  margin:0px auto;
+  margin-bottom:0px;
+  height:200px;
+  width:400px;
+  background-color:#9b90b7;
+  color:#fff;
+  padding:20px 10px;
+
+}
+
+.btn{
+margin-bottom: 10px;
+}
+
+.totAmount{
+  font-weight: bold;
+  font-size: larger;
+}
+
+.submit{
+margin: 10px 20px;
+width: 60%; /* Change the width to keep it smaller*/
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .right {
+    position: fixed;
+    top: 100px;
     right: 20px;
-    width: 300px;
+    width: 250px;
     border: 3px solid black;
     padding: 10px;
-  }
+    }
+    .submit{
+      margin: 30px 20px;
+      width: 60%; /* Change the width to keep it smaller*/
+      
+      }
+}
 
-  h1{
-    font-family: 'Great Vibes', cursive;
-    font-weight: bold;
+@media screen and (max-width:480px){
+  .right {
+    position: relative;
+    top: 10px;
+    right: 20px;
+    left: 20px;
+    margin-bottom: 60px;
+    width: 60%;
+    border: 3px solid black;
+    padding: 10px;
+    }
 
-  }
+    .submit{
+      margin: 10px 20px;
+      width: 60%; /* Change the width to keep it smaller*/
+      
+      }
 
-  .btn{
-    margin-bottom: 10px;
-  }
 
-  .submit{
-    margin: 0px 60px;
-  }
+}

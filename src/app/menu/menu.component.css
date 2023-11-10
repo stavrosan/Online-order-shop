@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
 
-h1{
-    margin: 10px 0px;
+
+
+
+.display-1{
+   
     font-family: 'Great Vibes', cursive; 
+    color: aliceblue;
+    padding: 20px 0;
 }
 
 .btn{
@@ -10,17 +15,101 @@ h1{
 }
 
 .card{
-    margin: 10px 0px;
+    display:flex;
+    flex-direction:column;
+    width:400px;
+    max-width: 100%;
+    margin-bottom: 20px;
+    
 }
 
+.card>div{
+    box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+  }
 
 .card img{
-    height: 300px;
-    width: 380px;
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 220px;
+  object-fit: cover;
+  background-position: center;
+  
+  
+
+}
+
+/*.card-img>img{
+    width:100%;
+    max-height: auto;
+    max-width: auto;
+    object-fit:cover;
+}
+*/
+
+
+.card-body{
+    padding:10px;
+   
 }
 
 .btn{
     cursor: pointer;
     color: white;
     transition: all 200ms ease;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .card{
+        display:flex;
+        flex-direction:column;
+        width:350px;
+        max-width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    
+    .card img{
+      width: 100%;
+      height: 100%;
+      max-width: 800px;
+      max-height: 150px;
+      object-fit: cover;
+    
+    }
+
+    .card-body{
+        padding:0px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .card{
+        display:flex;
+        flex-direction:column;
+        width:320px;
+        height: 400px;
+        max-width: 100%;
+        margin-bottom: 10px;
+        
+    }
+    
+    .card img{
+      width: 100%;
+      height: 100%;
+      max-width: 800px;
+      max-height: 180px;
+      object-fit: cover;
+    
+    }
+
+    .card-body{
+        padding:10px;
+    }
+
+
+
 }

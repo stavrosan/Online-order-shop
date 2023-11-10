@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+
 /* Import font for styling*/
 
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
@@ -14,6 +21,8 @@ height: 60vh;
 width: 100%;
 background-position: center;
 position: relative;
+background-color: black;
+
 }
 
 .mb-3{
@@ -39,36 +48,164 @@ margin-right: 6px;
 
 /* styling the main content*/
 .container{
-    display: flex;
-    justify-content: space-around;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
 }
 
-.container::after {
-content: "";
-clear: both;
 
+
+.feels{
+margin-right: 30px;
+margin-left: 30px;
 }
 
 .float-start{
 width: 30%;
 height: 40%;
-margin-bottom: 20px;
-margin-right: 20px;
+margin-bottom: 30px;
+padding-left: 30px;
 }
 
-.display-3{
-margin: 30px;
+.text-left{
+margin-left: 40px;
+padding-left: 50px;
 }
 
 .script{
-padding: 10px;
+padding: 10px 60px;
 margin-left: 5px;
 text-align: justify;
 }
 
 .card{
-    margin-left: 200px;
-    margin-bottom: 10px;
+display: inline-block;
+width: 100%; 
+}
+
+.card-title{
+  margin-top: 60px;
+  padding-left: -40px;
+  
 }
 
 
+
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+    .hero{
+        height: 35vh;
+        }
+    .img1{
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100%;
+        background-position: center;
+        position: relative;
+        background-color: black;
+        }
+    .mb-3{
+        margin-top: 1vh;
+        font-family: 'Great Vibes', cursive;
+        font-size: 7vh;
+        color: aliceblue;
+        }
+     h1{
+        font-size: 7vh;
+     }
+        h3{
+            color: aliceblue;
+            font-size: 2vh;
+            }
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 5px 10px;
+    }
+    .float-start{
+        width: 30%;
+        height: 40%;
+        margin-left: 5px;
+        }
+        .script{
+            padding: 10px;
+            text-align: justify;
+            }
+       
+    .card{
+      padding: 10px;
+        }
+    .img2{
+        width: 20rem;
+    }
+   
+   }
+@media screen and (max-width:480px){
+
+    .hero{
+        height: 35vh;
+        margin-bottom: 30px;
+        }
+    .img1{
+        background-size: cover; 
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100%;
+        background-position: center;
+        position: relative;
+        background-color: black;
+        margin-bottom: 5px;
+        }
+
+    .mb-3{
+        margin-top: 5px;
+        font-family: 'Great Vibes', cursive;
+        font-size: 5vh;
+        color: aliceblue;
+        }
+
+        .feels{
+        align-self: center;
+        font-size: 6vh;
+        }
+
+        h3{
+        color: aliceblue;
+        font-size: 2vh;
+            }
+    
+        .float-start{
+        width: 15rem;
+
+        }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin: 10px 0px;
+
+    }
+    .img2{
+        width: 15rem;
+        height: auto;
+    
+        }
+
+        .script{
+            padding: 10px;
+            text-align: justify;
+            }
+
+    .card-title{
+        margin-top: 5px;
+        font-size: 3vh;
+    }
+    
+    .card-text{
+    color: black;
+    }
+
+
+}

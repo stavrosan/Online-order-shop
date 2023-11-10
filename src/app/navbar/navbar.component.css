@@ -1,9 +1,23 @@
 
 .navbar{
 height: 80px;
+background-color: whitesmoke;
 }
 
 a{
 font-weight: bold;
 font-size: 3vh;
+}
+
+@media screen and (max-width:480px){
+
+    .navbar{
+        height: 50px;
+        padding: 0 30px;
+        }
+
+     
+
+
+
 }

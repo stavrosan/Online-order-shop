@@ -14,13 +14,16 @@ order:Ifood[] = [];
 total:number=0;
 
 
+
 //we use OnInit and service to get the cart and calculate the total
   constructor(private OS: OrderService){}
 
   ngOnInit(): void {
     this.order = this.OS.getCart();
     this.total = this.OS.calcTotal();
+    // this.qqty = this.OS.addTocart();
 }
+
 discount:number=15;
 serviceTip:number=10;
 
@@ -29,13 +32,11 @@ serviceTip:number=10;
 
 discountTotal(): number{
   if (this.total>40) {
-    return this.total = this.total*1-(this.discount/100)
+    return this.total*(1-this.discount/100)
   } else {
     return this.total
-    
   }
+  
 
-      
 }
-
 }
