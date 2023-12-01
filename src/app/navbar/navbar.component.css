@@ -1,7 +1,7 @@
 
 .navbar{
-height: 80px;
 background-color: whitesmoke;
+z-index: 1;
 }
 
 a{
@@ -14,8 +14,19 @@ font-family: 'Great Vibes';
 @media screen and (max-width:480px){
 
     .navbar{
-        height: 50px;
         padding: 0 30px;
+        background-color: whitesmoke;
+        }
+
+    .navbrar-nav{
+        background-color: whitesmoke;
+    }
+
+    a{
+        font-weight: bold;
+        font-size: 3vh;
+        font-family: 'Great Vibes';
+        
         }
 
      
