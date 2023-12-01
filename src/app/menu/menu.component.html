@@ -17,11 +17,11 @@ body{
 <!--Printing the menu-list with a loop using bootstrap cards-->
 
 <div class="container" >
-<div class="display-1 text-center">Our specialties</div>
+<h1 class="display-1">Our specialties</h1>
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
 <div *ngFor="let value of menuArr; index as i">
 <div class="card text-left p-2" style="max-width:100%;">
-<img src="{{value.image}}" alt="">
+<img src="{{value.image}}" alt="dish">
 <div class="card-body p-2">
 <h3 class="card-title">{{value.name}}</h3>
 <hr>

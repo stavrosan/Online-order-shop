@@ -13,9 +13,6 @@ export class OrderService {
 
   constructor() { }
 
-// addTocart(obj:Ifood){
-// this.cart.push(obj);
-// }
 
 
    addTocart(obj:Ifood){

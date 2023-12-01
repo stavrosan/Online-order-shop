@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
+
+.items{
+  padding: 20px;
+}
 
 .container{
 margin: 10px 0px;
@@ -26,33 +29,29 @@ text-align: center;
 .card{
   display:flex;
   flex-direction:column;
-  width:400px;
-  margin-bottom:60px;
-}
-.card>div{
-  box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
+  margin-left: 30px;
+
 }
 
-.card-image{
-  width:400px;
-  height:250px;
-}
-.card-image>img{
+
+.img-fluid{
   width:100%;
   height:100%;
-  object-fit:cover;
-  object-position:bottom;
+  object-fit: cover;
 }
 
-.card-body{
-  margin:0px auto;
-  margin-bottom:0px;
-  height:200px;
-  width:400px;
-  background-color:#9b90b7;
-  color:#fff;
-  padding:20px 10px;
 
+
+.card-body{
+  background-color:rgb(204, 218, 209);
+  color:black;
+  padding:10px 10px;
+  width: 400px;
+
+}
+
+.sum{
+  background-color: rgb(204, 218, 209);
 }
 
 .btn{
@@ -72,16 +71,19 @@ width: 60%; /* Change the width to keep it smaller*/
 
 @media screen and (min-width: 481px) and (max-width: 768px){
   .right {
-    position: fixed;
+    position: relative;
     top: 100px;
     right: 20px;
-    width: 250px;
+    left: 20px;
+    margin-bottom: 130px;
+    width: 100%;
     border: 3px solid black;
     padding: 10px;
     }
+
     .submit{
-      margin: 30px 20px;
-      width: 60%; /* Change the width to keep it smaller*/
+      margin: 50px 20px;
+      width: 100%; /* Change the width to keep it smaller*/
       
       }
 }
@@ -93,14 +95,14 @@ width: 60%; /* Change the width to keep it smaller*/
     right: 20px;
     left: 20px;
     margin-bottom: 60px;
-    width: 60%;
+    width: 90%;
     border: 3px solid black;
     padding: 10px;
     }
 
     .submit{
       margin: 10px 20px;
-      width: 60%; /* Change the width to keep it smaller*/
+      width: 90%; /* Change the width to keep it smaller*/
       
       }
 

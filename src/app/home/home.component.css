@@ -1,20 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    
-  }
 
-/* Import font for styling*/
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Happy+Monkey&display=swap');
 
 
 .hero{
 height: 70vh;
 }
 
-.img1{
+.imgBg{
 background-size: cover; 
 background-repeat: no-repeat;
 height: 60vh;
@@ -46,49 +37,72 @@ font-size: 10vh;
 margin-right: 6px;
 }
 
-/* styling the main content*/
-.container{
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
+
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
 }
 
-
-
-.feels{
-margin-right: 30px;
-margin-left: 30px;
+.left1 {
+    flex: 1;
 }
 
-.float-start{
-width: 30%;
-height: 40%;
-margin-bottom: 30px;
-padding-left: 30px;
+.right1 {
+    flex: 1;
+    text-align: center;
 }
 
-.text-left{
-margin-left: 40px;
-padding-left: 50px;
+.img1 {
+    max-width: 80%;
+    height: auto;
+    padding-left: 60px;
+    padding-top: 20px;
 }
 
-.script{
-padding: 10px 60px;
-margin-left: 5px;
-text-align: justify;
+.script {
+    max-width: 800px; 
+    margin: 0 20px;
+    padding-right: 60px;
 }
 
-.card{
-display: inline-block;
-width: 100%; 
+.list{
+    list-style-position: inside;
+    list-style-type: circle;
 }
 
-.card-title{
-  margin-top: 60px;
-  padding-left: -40px;
-  
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;   
 }
+
+.cardMenu {
+    display: flex;
+    width: 70%;
+    background-color: rgb(204, 218, 209);
+}
+
+.img2 {
+    flex: 1;
+    max-width: 40%;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.card-text {
+    flex: 1;
+    padding: 10px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 
 
 
@@ -97,7 +111,8 @@ width: 100%;
     .hero{
         height: 35vh;
         }
-    .img1{
+
+    .imgBg{
         background-size: cover; 
         background-repeat: no-repeat;
         height: 30vh;
@@ -106,36 +121,47 @@ width: 100%;
         position: relative;
         background-color: black;
         }
+
     .mb-3{
         margin-top: 1vh;
         font-family: 'Great Vibes', cursive;
         font-size: 7vh;
         color: aliceblue;
         }
+
+    .btn{
+        font-size: 10px;
+        margin-right: 6px;
+        }
+
      h1{
         font-size: 7vh;
-     }
-        h3{
-            color: aliceblue;
-            font-size: 2vh;
-            }
-    .container{
-        display: flex;
-        flex-direction: column;
-        margin: 5px 10px;
-    }
-    .float-start{
-        width: 30%;
-        height: 40%;
-        margin-left: 5px;
+       }
+
+    h3{
+        color: aliceblue;
+        font-size: 2vh;
         }
-        .script{
-            padding: 10px;
-            text-align: justify;
-            }
+
+    .container1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+    }
+    .img1{
+    width: 100%;
+        
+        }
+    .script{
+    padding: 10px;
+    text-align: justify;
+        }
        
-    .card{
+    .cardMenu{
       padding: 10px;
+      width: 80%;
         }
     .img2{
         width: 20rem;
@@ -148,7 +174,8 @@ width: 100%;
         height: 35vh;
         margin-bottom: 30px;
         }
-    .img1{
+
+    .imgBg{
         background-size: cover; 
         background-repeat: no-repeat;
         height: 30vh;
@@ -166,37 +193,45 @@ width: 100%;
         color: aliceblue;
         }
 
-        .feels{
+    .btn{
+        font-size: 8px;
+        margin-right: 6px;
+        }
+
+    .feels{
         align-self: center;
         font-size: 6vh;
         }
 
-        h3{
+    h3{
         color: aliceblue;
         font-size: 2vh;
-            }
+     }
     
-        .float-start{
-        width: 15rem;
 
-        }
-
-    .container{
+    .container1{
         display: flex;
         flex-direction: column;
         margin: 10px 0px;
 
     }
+
+    .cardMenu{
+    width: 100%;
+    margin: 10px;
+
+    }
+
     .img2{
-        width: 15rem;
+        width: 20rem;
         height: auto;
     
         }
 
-        .script{
-            padding: 10px;
-            text-align: justify;
-            }
+    .script{
+        padding: 10px;
+        text-align: justify;
+        }
 
     .card-title{
         margin-top: 5px;

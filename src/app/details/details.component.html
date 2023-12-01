@@ -1,8 +1,8 @@
 <div class="container">
 
 <!--Menu display with description and button with onclick event which adds items to the cart-->
-
-<div class="card">
+<div class='col md-4 p-2'>
+<div class="card h-100">
 <div class="card-image"> 
 <img src="{{food.image}}">
 </div>
@@ -11,7 +11,8 @@
 <p class="card-body">{{food.description}}</p>
 </div>
 <div class="card-price">€ {{food.price}}</div>
-<button (click)="addToCart()">Add to cart</button>
+<button class="btn" (click)="addToCart()">Add to cart</button>
+</div>
 </div>
 </div>
 

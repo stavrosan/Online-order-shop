@@ -1,37 +1,36 @@
 .container{
-    width:100vw;
     display:flex;
     justify-content:space-around;
     flex-wrap:wrap;
     padding:40px 20px;
 }
+
 .card{
-    display:flex;
-    flex-direction:column;
-    width:400px;
-    margin-bottom:60px;
-    position: relative;
-  }
+  display:flex;
+  flex-direction:column;
+  margin-bottom:10px;
+  position: relative;
+}
+
   .card>div{
     box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
   }
-  .card-image{
-    width:400px;
-    height:250px;
-  }
+
+
   .card-image>img{
     width:100%;
     height:100%;
     object-fit:cover;
-    object-position:bottom;
+    
   }
+
   .card-text{
     margin:0px;
     margin-bottom:-80px;
-    height:300px;
-    width:400px;
-    background-color:#5c5472;
-    color:#fff;
+    height:250px;
+    width:100%;
+    background-color:rgb(204, 218, 209);
+    color:black;
     padding:10px;
   }
   
@@ -56,7 +55,7 @@
   }
   
 
-button{
+.btn{
   position: absolute;
     font-size:2rem;
     padding: 5px;
@@ -65,7 +64,36 @@ button{
     background-color: green;
     transition: all 200ms ease;
     right: 5%;
-    top: 90%;
-    
-    
-}
+    top: 93%;
+  }
+
+  @media screen and (max-width:480px){
+
+    .card-text{
+      
+      margin-bottom:-70px;
+      height:300px;
+      width:100%;
+      background-color:rgb(204, 218, 209);
+      color:black;
+      padding:10px;
+    }
+
+   .card-price{
+    width: 50px;
+    height: 30px;
+    font-size: 1rem;
+    left: 2%;
+    top: 98%;
+  
+   }
+
+   .btn{
+    width: 30%;
+    font-size: 1rem;
+    right: 2%;
+    top: 97%;
+   }
+
+
+  }

@@ -12,6 +12,7 @@ export class OrderComponent implements OnInit {
   //We create an empty array that looks like Ifood
 order:Ifood[] = [];
 total:number=0;
+cartCount:number=0;
 
 
 
@@ -21,7 +22,7 @@ total:number=0;
   ngOnInit(): void {
     this.order = this.OS.getCart();
     this.total = this.OS.calcTotal();
-    // this.qqty = this.OS.addTocart();
+    
 }
 
 discount:number=15;
