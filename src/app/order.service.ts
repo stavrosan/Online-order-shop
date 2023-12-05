@@ -25,6 +25,9 @@ export class OrderService {
     
     }
 
+  removeItem(index: number): void {
+    this.cart.splice(index, 1);
+    }
 
 //add to cart function, get cart and calculation of total
   getCart(){

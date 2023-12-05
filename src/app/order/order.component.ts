@@ -25,6 +25,11 @@ cartCount:number=0;
     
 }
 
+removeItem(index: number): void {
+  this.OS.removeItem(index);
+  this.total = this.OS.calcTotal();
+}
+
 discount:number=15;
 serviceTip:number=10;
 

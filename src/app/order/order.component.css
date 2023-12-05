@@ -4,7 +4,7 @@
 }
 
 .container{
-margin: 10px 0px;
+margin: 10px 10px;
 position: relative;
 max-height: max-content;
 min-height: 100vh; /* We choose min-height and max-content, so when the items are added footer stays on the bottom and the page stretches*/
@@ -14,8 +14,8 @@ min-height: 100vh; /* We choose min-height and max-content, so when the items ar
 .right {
 position: fixed;
 top: 200px;
-right: 20px;
-width: 350px;
+right: 50px;
+width: 500px;
 border: 3px solid black;
 padding: 10px;
 }
@@ -30,6 +30,7 @@ text-align: center;
   display:flex;
   flex-direction:column;
   margin-left: 30px;
+  max-width: 750px;
 
 }
 
@@ -46,7 +47,8 @@ text-align: center;
   background-color:rgb(204, 218, 209);
   color:black;
   padding:10px 10px;
-  width: 400px;
+  width: 100%; 
+  max-width: 100%;
 
 }
 
@@ -56,6 +58,11 @@ text-align: center;
 
 .btn{
 margin-bottom: 10px;
+border: solid gray;
+padding: 3px 3px;
+font-size: 1rem;
+width: 5em;
+border-radius: 1rem;
 }
 
 .totAmount{
@@ -64,12 +71,40 @@ margin-bottom: 10px;
 }
 
 .submit{
-margin: 10px 20px;
+margin: 20px 20px;
 width: 60%; /* Change the width to keep it smaller*/
+
+padding: 10px;
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px){
+
+  .card{
+    display:flex;
+    flex-direction:column;
+    margin-left: 30px;
+    max-width: 550px;
+  
+  }
+
+  .right {
+    position: fixed;
+    top: 200px;
+    right: 50px;
+    width: 350px;
+    border: 3px solid black;
+    padding: 10px;
+    }
 
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px){
+
+  .container{
+    margin: 0;
+  }
+
   .right {
     position: relative;
     top: 100px;
@@ -90,9 +125,14 @@ width: 60%; /* Change the width to keep it smaller*/
 
 @media screen and (max-width:480px){
 
+  .container{
+    margin: 0;
+  }
+
   .card{
     display:flex;
     flex-direction:column;
+    margin: 0 10px;
   
   }
 
@@ -100,7 +140,7 @@ width: 60%; /* Change the width to keep it smaller*/
     background-color:rgb(204, 218, 209);
     color:black;
     padding:5px 5px;
-    width: 200px;
+    width: 100%;
   
   }
   .right {

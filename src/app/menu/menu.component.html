@@ -1,14 +1,17 @@
 <style>
-body{
-    background-image: url('./assets/images/hero.jpg');
-    background-repeat: repeat-y;
-    background-size: cover;
-    /*filter: brightness(0.6);
-    filter: blur(8px);
-  -webkit-filter: blur(8px);*/
 
-}
-</style>
+    
+    body{
+        background-image: url('./assets/images/hero.jpg');
+        background-repeat: repeat-y;
+        background-size: cover;
+        z-index: -1;
+        /*filter: brightness(0.6);
+        filter: blur(8px);
+      -webkit-filter: blur(8px);*/
+    
+    } 
+    </style>
 <body>
     
 
@@ -18,9 +21,10 @@ body{
 
 <div class="container" >
 <h1 class="display-1">Our specialties</h1>
+<h3 class="text-center" style="color: rgb(212, 241, 23); padding: 10px;">Order over 40€ and get 15% Discount</h3>
 <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
 <div *ngFor="let value of menuArr; index as i">
-<div class="card text-left p-2" style="max-width:100%;">
+<div class="card text-left" style="max-width:100%;">
 <img src="{{value.image}}" alt="dish">
 <div class="card-body p-2">
 <h3 class="card-title">{{value.name}}</h3>
@@ -31,9 +35,9 @@ body{
 <!--when we click a product(dish) to see its index in the url with the routerlink. 
     Showing buttons if availability is true. If==false, hide the button and message diplayed "Not available"-->
 <div class="card-title text-start" *ngIf="value.availability==true">
-    <button routerLink="details/{{i}}" class="btn btn-info">Details</button>
-    <button class="btn btn-dark" (click)="addToCart(value)">Order Now</button></div>
-    <div *ngIf="value.availability==false"><h2 class="text-danger">Not available</h2></div>
+    <button routerLink="details/{{i}}" class="btn">Details</button>
+    <button type="button" class="btn add" (click)="addToCart(value)">Order Now</button></div>
+    <div *ngIf="value.availability==false"><h2 class="text-danger">Item not available</h2></div>
 </div>
 </div>
 </div>
