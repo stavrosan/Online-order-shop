@@ -3,10 +3,11 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
 Main features:
-Products can be added to the cart and are diplayed in cart-page.
+
+Products can be added to the cart and they are displayed in cart-page.
 Increment the quantity of a product by clicking add to cart button.
-The cart items can be removed bz clicking remove button.
-Total cost of cart items and the whole cart total are calculated upon updates in cart items.
+The cart items can be removed by clicking remove button.
+Total amount of cart items and the whole cart total are calculated upon updates in cart items (15% discount in total amount when total>=40).
 
 ## Development server
 
