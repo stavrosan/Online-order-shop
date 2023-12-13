@@ -1,8 +1,8 @@
-# Online order shop
+# About the project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
-Main features:
+# Main features
 
 Products can be added to the cart and they are displayed in cart-page.
 Increment the quantity of a product by clicking add to cart button.
