@@ -10,10 +10,17 @@ max-height: max-content;
 min-height: 100vh; /* We choose min-height and max-content, so when the items are added footer stays on the bottom and the page stretches*/
 }
 
+.empty{
+  background-color: rgb(184, 183, 183);
+  width: 90vw;
+  height: 7vh;
+  margin-left: 50px;
+}
+
 
 .right {
 position: fixed;
-top: 200px;
+top: 300px;
 right: 50px;
 width: 500px;
 border: 3px solid black;
@@ -31,7 +38,6 @@ text-align: center;
   flex-direction:column;
   margin-left: 30px;
   max-width: 750px;
-
 }
 
 
@@ -105,6 +111,13 @@ padding: 10px;
     margin: 0;
   }
 
+  .empty{
+    width: 80vw;
+    height: 7vh;
+    margin-bottom: 10px;
+    margin-left: 60px;
+  }
+
   .right {
     position: relative;
     top: 100px;
@@ -127,6 +140,13 @@ padding: 10px;
 
   .container{
     margin: 0;
+  }
+
+  .empty{
+    width: 65vw;
+    height: 7vh;
+    margin-left: 60px;
+    margin-bottom: 10px;
   }
 
   .card{

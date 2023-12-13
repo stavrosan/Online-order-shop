@@ -1,6 +1,8 @@
 <h1 class="items">Your order</h1>
 <div class="container">
 
+  <div class="empty" *ngIf="total<=0"><h3 class="text-center m-4 p-2">Your cart is empty</h3></div>
+
 <!--Display of items added to the cart with for loop <h2 class="text-center bg-dark text-white p-3
    fw-bold rounded mb-10" style="width: 40%;">Shopping Basket</h2>-->
 
