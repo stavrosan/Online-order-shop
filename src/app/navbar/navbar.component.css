@@ -1,6 +1,6 @@
 
 .navbar{
-background-color: whitesmoke;
+background-color:  rgba(244, 242, 242, 0.984);
 z-index: 1;
 }
 
@@ -15,7 +15,7 @@ font-family: 'Great Vibes';
 
     .navbar{
         padding: 0 30px;
-        background-color: whitesmoke;
+        background-color: rgba(244, 242, 242, 0.984);
         }
 
     .navbrar-nav{
