@@ -4,6 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Main features
 
+ Markup :
 -Products can be added to the cart and they are displayed in cart-page.
 -Increment the quantity of a product by clicking add to cart button.
 -The cart items can be removed by clicking remove button.
