@@ -4,11 +4,11 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Main features
 
-Make * bullet point -Products can be added to the cart and they are displayed in cart-page.
-Make * bullet point -Increment the quantity of a product by clicking add to cart button.
-Make * bullet point -The cart items can be removed by clicking remove button.
-Make * bullet point -Total amount of cart items and the whole cart total are calculated upon updates in cart items (15% discount in total amount when total>=40).
-Make * bullet point -Responsive design.
+-Products can be added to the cart and they are displayed in cart-page.
+-Increment the quantity of a product by clicking add to cart button.
+-The cart items can be removed by clicking remove button.
+-Total amount of cart items and the whole cart total are calculated upon updates in cart items (15% discount in total amount when total>=40).
+-Responsive design.
 
 ## Development server
 
