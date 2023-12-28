@@ -37,8 +37,8 @@
     flex-direction:column;
     width:400px;
     max-width: 100%;
-    margin-bottom: 20px;
-    
+    margin-bottom: 20px; 
+    border-radius: 10px;
 }
 
 .card>div{
@@ -53,20 +53,14 @@
   max-height: 220px;
   object-fit: cover;
   background-position: center;
+  border-radius: 10px;
 }
 
-/*.card-img>img{
-    width:100%;
-    max-height: auto;
-    max-width: auto;
-    object-fit:cover;
-}
-*/
 
 
 .card-body{
     padding:10px;
-    background-color:rgb(204, 218, 209);
+    background-color:whitesmoke;
    
 }
 
