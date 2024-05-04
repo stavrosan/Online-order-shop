@@ -3,43 +3,39 @@ import { Ifood } from './ifood';
 import { food } from './food';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 //We create empty array to use later
 export class OrderService {
-  cart:Array<Ifood> = [];
+  cart: Array<Ifood> = [];
 
- qtty:number=0;
+  qtty: number = 0;
 
-  constructor() { }
+  constructor() {}
 
-
-
-   addTocart(obj:Ifood){
-
- if (this.cart.find((item) => item.name == obj.name)) {
- obj.qtty++
- } else {
-  this.cart.push(obj);
+  addTocart(obj: Ifood) {
+    if (this.cart.find((item) => item.name == obj.name)) {
+      obj.qtty++;
+    } else {
+      this.cart.push(obj);
     }
-    
-    }
+  }
 
   removeItem(index: number): void {
     this.cart.splice(index, 1);
-    }
+  }
 
-//add to cart function, get cart and calculation of total
-  getCart(){
+  //add to cart function, get cart and calculation of total
+  getCart() {
     return this.cart;
   }
 
-  calcTotal(){
-    let total:number=0;
+  calcTotal() {
+    let total: number = 0;
 
-    this.cart.forEach((val) =>{
-    total+=val.price*val.qtty;
-  })
-  return total;
-}
+    this.cart.forEach((val) => {
+      total += val.price * val.qtty;
+    });
+    return total;
+  }
 }

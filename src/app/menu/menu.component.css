@@ -1,115 +1,98 @@
-
-
-.display-1{
-   
-    font-family: 'Great Vibes', cursive; 
-    color: black;
-    text-align: center;
-    padding: 20px 0;
+.display-1 {
+  font-family: "Great Vibes", cursive;
+  color: black;
+  text-align: center;
+  padding: 20px 0;
 }
 
-.btn{
-    margin-right: 6px;
-    background-color: rgb(0, 157, 255);
-    border: solid black;
-    padding: 5px 3px;
-    font-size: 1rem;
-    width: 7em;
-    border-radius: 1rem;
-    color: whitesmoke;
-    cursor: pointer;
+.btn {
+  margin-right: 6px;
+  border: solid black;
+  padding: 5px 3px;
+  font-size: 1rem;
+  width: 7em;
+  border-radius: 1rem;
+  color: black;
+  cursor: pointer;
 }
 
-.add{
-    background-color: lightcoral;
-    border: solid black;
-    padding: 5px 3px;
-    font-size: 1rem;
-    width: 7em;
-    border-radius: 1rem;
-    color: whitesmoke;
-    cursor: pointer;
+.add {
+  background-color: lightcoral;
+  border: solid black;
+  padding: 5px 3px;
+  font-size: 1rem;
+  width: 7em;
+  border-radius: 1rem;
+  color: whitesmoke;
+  cursor: pointer;
 }
 
-
-.card{
-    display:flex;
-    flex-direction:column;
-    width:400px;
-    max-width: 100%;
-    margin-bottom: 20px; 
-    border-radius: 10px;
-}
-
-.card>div{
-    box-shadow:0 15px 20px 0 rgba(0,0,0,0.5);
-  }
-
-
-.card img{
-  width: 100%;
-  height: 100%;
-  max-width: 800px;
-  max-height: 220px;
-  object-fit: cover;
-  background-position: center;
+.card {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  max-width: 100%;
+  margin-bottom: 20px;
   border-radius: 10px;
 }
 
-
-
-.card-body{
-    padding:10px;
-    background-color:whitesmoke;
-   
+.card > div {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-
-@media screen and (min-width: 769px) and (max-width: 1024px){
-    .card{
-        display:flex;
-        flex-direction:column;
-        width:350px;
-        max-width: 100%;
-        margin-bottom: 20px;
-        
-    }
-    
-    .card img{
-      width: 100%;
-      height: 100%;
-      max-width: 800px;
-      max-height: 150px;
-      object-fit: cover;
-    
-    }
-
-    .card-body{
-        padding:0px;
-    }
-
-
-
+.card img {
+  width: 100%;
+  height: 100%;
+  max-width: 800px;
+  max-height: 270px;
+  object-fit: cover;
+  background-position: center;
+  background-size: contain;
+  border-radius: 10px;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-    .card{
-        display:flex;
-        flex-direction:column;
-        width:320px;
-        height: 400px;
-        max-width: 100%;
-        margin-bottom: 10px;
-        
-    }
-    
-    .card img{
-      width: 100%;
-      height: 100%;
-      max-width: 800px;
-      max-height: 180px;
-      object-fit: cover;
-    
-    }
+.card-body {
+  padding: 10px;
+  background-color: whitesmoke;
+}
 
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 200px;
+    object-fit: cover;
+  }
+
+  .card-body {
+    padding: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .card {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    max-height: 370px;
+    max-width: 100%;
+    padding: 0px;
+  }
+
+  .card img {
+    width: 100%;
+    height: 100%;
+    max-width: 800px;
+    max-height: 180px;
+    object-fit: cover;
+  }
 }

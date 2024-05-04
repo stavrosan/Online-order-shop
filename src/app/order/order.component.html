@@ -1,67 +1,69 @@
 <h1 class="items">Your order</h1>
 <div class="container">
+  <div class="empty" *ngIf="total <= 0">
+    <h3 class="text-center fw-bold m-4 p-2">Your cart is empty!</h3>
+  </div>
 
-  <div class="empty" *ngIf="total<=0"><h3 class="text-center m-4 p-2">Your cart is empty</h3></div>
+  <!--Display of items added to the cart with for loop -->
 
-<!--Display of items added to the cart with for loop <h2 class="text-center bg-dark text-white p-3
-   fw-bold rounded mb-10" style="width: 40%;">Shopping Basket</h2>-->
-
-      
-      <div *ngFor="let val of order, index as i">
-      <div class="card mb-1">
-        <div class="row g-0">
-          <div class="col-md-4">
-            <img src="{{val.image}}" class="img-fluid rounded-start" alt="{{val.name}}">
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">{{val.name}}</h5>
-              <p class="card-text">{{val.description}}</p>
-              <h5 class="card-text">€ {{val.price}}</h5>
-              <p>{{val.qtty}} item(s)</p>
-              <button class="btn btn-dark" (click)="removeItem(i)">Remove</button>
-            </div>
+  <div *ngFor="let val of order; index as i">
+    <div class="card mb-1">
+      <div class="row g-0">
+        <div class="col-md-4">
+          <img
+            src="{{ val.image }}"
+            class="img-fluid rounded-start"
+            alt="{{ val.name }}"
+          />
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+            <h5 class="card-title">{{ val.name }}</h5>
+            <p class="card-text">{{ val.description }}</p>
+            <h5 class="card-text">€ {{ val.price }}</h5>
+            <p>{{ val.qtty }} item(s)</p>
+            <button class="btn btn-dark" (click)="removeItem(i)">Remove</button>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+
+  <section class="right">
+    <h2 class="text-center sum">Summary</h2>
+    <hr />
+
+    <div *ngIf="total > 40">
+      <h5 class="text-danger">Discount: {{ discount }}%</h5>
+      <p>Amount after discount: {{ discountTotal().toFixed(2) }}€</p>
+    </div>
+    <div *ngIf="total <= 40"></div>
+    <p>Total without discount: {{ total.toFixed(2) }}€</p>
+
+    <div>
+      Delivery charge (10%): {{ (total * (serviceTip / 100)).toFixed(2) }}€
+    </div>
+    <hr />
+    <div class="totAmount">
+      Total amount (including VAT):
+      {{ (discountTotal() + total * (serviceTip / 100)).toFixed(2) }}€
+    </div>
+  </section>
+
+  <div class="submit">
+    <h1>Order form</h1>
+    <p>Please fill up the info for the delivery</p>
+    <hr />
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">Name:</label>
+        <input type="text" class="form-control" id="name" />
       </div>
-    
-
-
-  
-<section class="right">
-<h2 class="text-center sum">Summary</h2>
-<hr>
-
-<div *ngIf="total>40">
-  <h5 class="text-danger">Discount: {{discount}}%</h5>
-    <p>Amount after discount: {{discountTotal().toFixed(2)}}€</p>
-</div>
-<div *ngIf="total<=40">
-</div>
-<p>Total without discount: {{ total.toFixed(2) }}€</p>
-
-<div>Delivery charge (10%): {{(total*(serviceTip/100)).toFixed(2)}}€</div>
-<hr>
-<div class="totAmount">Total amount (including VAT): {{((discountTotal())+(total*(serviceTip/100))).toFixed(2)}}€</div>
-</section>
-
-
-
-<div class="submit">
-<h1>Order form</h1>
-<p>Please fill up the info for the delivery</p>
-<hr>
-<form>
-  <div class="mb-3">
-    <label for="name" class="form-label">Name:</label>
-    <input type="text" class="form-control" id="name">
+      <div class="mb-3">
+        <label for="address" class="form-label">Address:</label>
+        <input type="text" class="form-control" id="address" />
+      </div>
+      <button type="submit" class="btn btn-primary">Purchase</button>
+    </form>
   </div>
-  <div class="mb-3">
-    <label for="address" class="form-label">Address:</label>
-    <input type="text" class="form-control" id="address">
-  </div>
-  <button type="submit" class="btn btn-primary">Purchase</button>
-</form>
-</div>
 </div>

@@ -1,256 +1,239 @@
-
-
-
-.hero{
-height: 70vh;
+.hero {
+  height: 70vh;
 }
 
-.imgBg{
-background-size: cover; 
-background-repeat: no-repeat;
-height: 60vh;
-width: 100%;
-background-position: center;
-position: relative;
-background-color: black;
-
+.imgBg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60vh;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-color: black;
 }
 
-.mb-3{
-margin-top: 5vh;
-font-family: 'Great Vibes', cursive;
-font-size: 10vh;
-color: aliceblue;
+.mb-3 {
+  margin-top: 5vh;
+  font-family: "Great Vibes", cursive;
+  font-size: 10vh;
+  color: aliceblue;
 }
 
-h3{
-color: aliceblue;
+h3 {
+  color: aliceblue;
 }
 
-h1{
-font-family: 'Great Vibes', cursive;
-font-size: 10vh;
-}
-     
-
-.btn{
-margin-right: 6px;
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 10vh;
 }
 
+.btn {
+  margin-right: 6px;
+}
 
 .container1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .left1 {
-    flex: 1;
+  flex: 1;
 }
 
 .right1 {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .img1 {
-    max-width: 80%;
-    height: auto;
-    padding-left: 150px;
-    padding-top: 20px;
+  max-width: 80%;
+  height: auto;
+  padding-left: 150px;
+  padding-top: 20px;
 }
 
 .script {
-    max-width: 800px; 
-    margin: 0 20px;
-    padding-right: 60px;
+  max-width: 800px;
+  margin: 0 20px;
+  padding-right: 60px;
 }
 
-.list{
-    list-style-position: inside;
-    list-style-type: circle;
+.list {
+  list-style-position: inside;
+  list-style-type: circle;
 }
 
 .container2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px 0;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
 }
 
 .cardMenu {
-    display: flex;
-    width: 70%;
-    background-color: rgb(204, 218, 209);
+  display: flex;
+  width: 70%;
+  background-color: rgb(204, 218, 209);
 }
 
 .img2 {
-    flex: 1;
-    max-width: 40%;
-    height: auto;
-    padding: 10px;
-    border-radius: 20px;
-    object-fit: cover;
+  flex: 1;
+  max-width: 40%;
+  height: auto;
+  padding: 10px;
+  border-radius: 20px;
+  object-fit: cover;
 }
 
 .card-text {
-    flex: 1;
-    padding: 10px; 
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  flex: 1;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
-
-
-
-@media screen and (min-width: 481px) and (max-width: 768px){
-.hero{
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .hero {
     height: 35vh;
-}
+  }
 
-.imgBg{
-    background-size: cover; 
+  .imgBg {
+    background-size: cover;
     background-repeat: no-repeat;
     height: 30vh;
     width: 100%;
     background-position: center;
     position: relative;
     background-color: black;
-}
+  }
 
-.mb-3{
+  .mb-3 {
     margin-top: 1vh;
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
     font-size: 7vh;
     color: aliceblue;
-}
+  }
 
-.btn{
+  .btn {
     font-size: 10px;
     margin-right: 6px;
-}
+  }
 
- h1{
+  h1 {
     font-size: 7vh;
-}
+  }
 
-h3{
-color: aliceblue;
-font-size: 2vh;
-}
+  h3 {
+    color: aliceblue;
+    font-size: 2vh;
+  }
 
-.container1{
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin: 5px 10px;
-}
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 10px;
+  }
 
-.img1{
+  .img1 {
     width: 100%;
-}
+  }
 
-.script{
+  .script {
     padding: 10px;
     text-align: justify;
-}
-       
-.cardMenu{
+  }
+
+  .cardMenu {
     padding: 10px;
     width: 80%;
-}
+  }
 
-.img2{
+  .img2 {
     width: 20rem;
+  }
 }
-}
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  .hero {
+    height: 40vh;
+    margin-bottom: 30px;
+    padding: 0px;
+  }
 
-    .hero{
-        height: 40vh;
-        margin-bottom: 30px;
-        padding: 0px;
-        }
+  .imgBg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    width: 100%;
+    background-position: center;
+    position: relative;
+    background-color: black;
+    margin-bottom: 5px;
+  }
 
-    .imgBg{
-        background-size: cover; 
-        background-repeat: no-repeat;
-        height: 35vh;
-        width: 100%;
-        background-position: center;
-        position: relative;
-        background-color: black;
-        margin-bottom: 5px;
-        }
+  .mb-3 {
+    margin-top: 5px;
+    font-family: "Great Vibes", cursive;
+    font-size: 5vh;
+    color: aliceblue;
+  }
 
-    .mb-3{
-        margin-top: 5px;
-        font-family: 'Great Vibes', cursive;
-        font-size: 5vh;
-        color: aliceblue;
-        }
+  .btn {
+    font-size: 8px;
+    margin-right: 6px;
+  }
 
-    .btn{
-        font-size: 8px;
-        margin-right: 6px;
-        }
+  .feels {
+    align-self: center;
+    font-size: 6vh;
+  }
 
-    .feels{
-        align-self: center;
-        font-size: 6vh;
-        }
+  h3 {
+    color: aliceblue;
+    font-size: 2vh;
+  }
 
-    h3{
-        color: aliceblue;
-        font-size: 2vh;
-     }
-    
+  .container1 {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+  }
 
-    .container1{
-        display: flex;
-        flex-direction: column;
-        margin-top: 10px;
+  .img1 {
+    width: 100%;
+    padding-left: 90px;
+    padding-top: 10px;
+  }
 
-    }
-
-    .img1{
-        width: 100%;
-        padding-left: 90px;
-        padding-top: 10px;
-    }
-
-    .cardMenu{
+  .cardMenu {
     width: 100%;
     margin: 10px;
+  }
 
-    }
+  .img2 {
+    width: 20rem;
+    height: auto;
+  }
 
-    .img2{
-        width: 20rem;
-        height: auto;
-    
-        }
+  .script {
+    padding: 10px;
+    text-align: justify;
+  }
 
-    .script{
-        padding: 10px;
-        text-align: justify;
-        }
+  .card-title {
+    margin-top: 5px;
+    font-size: 3vh;
+  }
 
-    .card-title{
-        margin-top: 5px;
-        font-size: 3vh;
-    }
-    
-    .card-text{
+  .card-text {
     color: black;
-    }
-
-
+  }
 }

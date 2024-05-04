@@ -1,36 +1,27 @@
-
-.navbar{
-background-color:  rgba(244, 242, 242, 0.984);
-z-index: 1;
+.navbar {
+  background-color: rgba(244, 242, 242, 0.984);
+  z-index: 1;
 }
 
-a{
-font-weight: bold;
-font-size: 5vh;
-font-family: 'Great Vibes';
-
+a {
+  font-weight: bold;
+  font-size: 5vh;
+  font-family: "Great Vibes";
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width: 480px) {
+  .navbar {
+    padding: 0 30px;
+    background-color: rgba(244, 242, 242, 0.984);
+  }
 
-    .navbar{
-        padding: 0 30px;
-        background-color: rgba(244, 242, 242, 0.984);
-        }
+  .navbrar-nav {
+    background-color: whitesmoke;
+  }
 
-    .navbrar-nav{
-        background-color: whitesmoke;
-    }
-
-    a{
-        font-weight: bold;
-        font-size: 3vh;
-        font-family: 'Great Vibes';
-        
-        }
-
-     
-
-
-
+  a {
+    font-weight: bold;
+    font-size: 3vh;
+    font-family: "Great Vibes";
+  }
 }

@@ -8,27 +8,33 @@ import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
   {
-path:"home",component:HomeComponent
-},
-{
-path:"",component:MenuComponent
-},
-{
-path:"details/:id",component:DetailsComponent
-},
-{
-path:"about",component:AboutComponent
-},
-{
-path:"order",component:OrderComponent
-},
-{
-path:"**",redirectTo: "" //Redirects to the home page wherever we click
-}
+    path: 'home',
+    component: HomeComponent,
+  },
+  {
+    path: '',
+    component: MenuComponent,
+  },
+  {
+    path: 'details/:id',
+    component: DetailsComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+  },
+  {
+    path: 'order',
+    component: OrderComponent,
+  },
+  {
+    path: '**',
+    redirectTo: '', //Redirects to the home page wherever we click
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

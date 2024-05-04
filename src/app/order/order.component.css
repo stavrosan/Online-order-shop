@@ -1,97 +1,88 @@
-
-.items{
+.items {
   padding: 20px;
 }
 
-.container{
-margin: 10px 10px;
-position: relative;
-max-height: max-content;
-min-height: 100vh; /* We choose min-height and max-content, so when the items are added footer stays on the bottom and the page stretches*/
+.container {
+  margin: 10px 10px;
+  position: relative;
+  max-height: max-content;
+  min-height: 100vh; /* We choose min-height and max-content, so when the items are added footer stays on the bottom and the page stretches*/
 }
 
-.empty{
+.empty {
   width: 90vw;
   height: 7vh;
   margin-left: 50px;
   color: brown;
 }
 
-
 .right {
-position: fixed;
-top: 300px;
-right: 50px;
-width: 500px;
-border: 3px solid black;
-padding: 10px;
+  position: fixed;
+  top: 300px;
+  right: 50px;
+  width: 500px;
+  border: 3px solid black;
+  padding: 10px;
 }
 
-h1{
-font-family: 'Great Vibes', cursive;
-font-weight: bold;
-text-align: center;
+h1 {
+  font-family: "Great Vibes", cursive;
+  font-weight: bold;
+  text-align: center;
 }
 
-.card{
-  display:flex;
-  flex-direction:column;
+.card {
+  display: flex;
+  flex-direction: column;
   margin-left: 30px;
   max-width: 750px;
 }
 
-
-.img-fluid{
-  width:100%;
-  height:100%;
+.img-fluid {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
 }
 
-
-
-.card-body{
-  background-color:rgb(204, 218, 209);
-  color:black;
-  padding:10px 10px;
-  width: 100%; 
+.card-body {
+  background-color: rgb(204, 218, 209);
+  color: black;
+  padding: 10px 10px;
+  width: 100%;
   max-width: 100%;
-
 }
 
-.sum{
+.sum {
   background-color: rgb(204, 218, 209);
 }
 
-.btn{
-margin-bottom: 10px;
-border: solid gray;
-padding: 3px 3px;
-font-size: 1rem;
-width: 5em;
-border-radius: 1rem;
+.btn {
+  margin-bottom: 10px;
+  border: solid gray;
+  padding: 3px 3px;
+  font-size: 1rem;
+  width: 5em;
+  border-radius: 1rem;
 }
 
-.totAmount{
+.totAmount {
   font-weight: bold;
   font-size: larger;
 }
 
-.submit{
-margin: 20px 20px;
-width: 60%; /* Change the width to keep it smaller*/
+.submit {
+  margin: 20px 20px;
+  width: 60%; /* Change the width to keep it smaller*/
 
-padding: 10px;
-
+  padding: 10px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px){
-
-  .card{
-    display:flex;
-    flex-direction:column;
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .card {
+    display: flex;
+    flex-direction: column;
     margin-left: 30px;
     max-width: 550px;
-  
   }
 
   .right {
@@ -101,17 +92,15 @@ padding: 10px;
     width: 350px;
     border: 3px solid black;
     padding: 10px;
-    }
-
+  }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
-
-  .container{
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
     margin: 0;
   }
 
-  .empty{
+  .empty {
     width: 80vw;
     height: 7vh;
     margin-bottom: 10px;
@@ -127,41 +116,37 @@ padding: 10px;
     width: 100%;
     border: 3px solid black;
     padding: 10px;
-    }
+  }
 
-    .submit{
-      margin: 50px 20px;
-      width: 100%; /* Change the width to keep it smaller*/
-      
-      }
+  .submit {
+    margin: 50px 20px;
+    width: 100%; /* Change the width to keep it smaller*/
+  }
 }
 
-@media screen and (max-width:480px){
-
-  .container{
+@media screen and (max-width: 480px) {
+  .container {
     margin: 0;
   }
 
-  .empty{
+  .empty {
     width: 65vw;
     height: 7vh;
     margin-left: 60px;
     margin-bottom: 20px;
   }
 
-  .card{
-    display:flex;
-    flex-direction:column;
+  .card {
+    display: flex;
+    flex-direction: column;
     margin: 0 10px;
-  
   }
 
-  .card-body{
-    background-color:rgb(204, 218, 209);
-    color:black;
-    padding:5px 5px;
+  .card-body {
+    background-color: rgb(204, 218, 209);
+    color: black;
+    padding: 5px 5px;
     width: 100%;
-  
   }
   .right {
     position: relative;
@@ -172,13 +157,10 @@ padding: 10px;
     width: 90%;
     border: 3px solid black;
     padding: 10px;
-    }
+  }
 
-    .submit{
-      margin: 10px 20px;
-      width: 90%; /* Change the width to keep it smaller*/
-      
-      }
-
-
+  .submit {
+    margin: 10px 20px;
+    width: 90%; /* Change the width to keep it smaller*/
+  }
 }

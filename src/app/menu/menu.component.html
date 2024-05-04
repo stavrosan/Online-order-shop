@@ -1,30 +1,40 @@
+<body>
+  <!--style="background-image: linear-gradient(rgba(18, 16, 16, 0.5), rgba(27, 23, 23, 0.4)),url('./assets/images/bgimage.jpg'); background-repeat: no-repeat; background-position:center; background-size: cover;"> -->
 
-<body style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),url('./assets/images/bgimage.jpg'); background-repeat: no-repeat; background-position:center; background-size: cover;">
-    
-<!--Printing the menu-list with a loop using bootstrap cards-->
+  <!--Printing the menu-list with a loop using bootstrap cards-->
 
-<div class="container" >
-<h1 class="display-1 text-white">Our specialties</h1>
-<h3 class="text-center" style="color: rgb(175, 200, 10); padding: 10px;">Order over 40€ and get 15% discount</h3>
-<div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
-<div *ngFor="let value of menuArr; index as i">
-<div class="card text-left" style="max-width:100%;">
-<img src="{{value.image}}" alt="dish">
-<div class="card-body p-2">
-<h3 class="card-title">{{value.name}}</h3>
-<hr>
-<h5 class="price">€ {{value.price}}</h5>
-<hr>
+  <div class="container">
+    <h1 class="display-1">Our specialties</h1>
+    <h3 class="text-center" style="color: rgb(198, 222, 40); padding: 10px">
+      Order over 40€ and get 15% discount
+    </h3>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+      <div *ngFor="let value of menuArr; index as i">
+        <div class="card text-left" style="max-width: 100%">
+          <img src="{{ value.image }}" alt="dish" />
+          <div class="card-body p-2">
+            <h4 class="card-title fw-bold">{{ value.name }}</h4>
+            <hr />
+            <h5 class="price">€ {{ value.price }}</h5>
+            <hr />
 
-<!--when we click a product(dish) to see its index in the url with the routerlink. 
+            <!--when we click a product(dish) to see its index in the url with the routerlink. 
     Showing buttons if availability is true. If==false, hide the button and message diplayed "Not available"-->
-<div class="card-title text-start" *ngIf="value.availability==true">
-    <button routerLink="details/{{i}}" class="btn">Details</button>
-    <button type="button" class="btn add" (click)="addToCart(value)">Order Now</button></div>
-    <div *ngIf="value.availability==false"><h2 class="text-danger">Item not available</h2></div>
-</div>
-</div>
-</div>
-</div>
-</div>
+            <div
+              class="card-title text-start"
+              *ngIf="value.availability == true"
+            >
+              <button routerLink="details/{{ i }}" class="btn">Details</button>
+              <button type="button" class="btn add" (click)="addToCart(value)">
+                Order Now
+              </button>
+            </div>
+            <div *ngIf="value.availability == false">
+              <h3 class="text-danger">Item not available</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
