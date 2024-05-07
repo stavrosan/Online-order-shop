@@ -1,5 +1,4 @@
 <body>
-  <!--style="background-image: linear-gradient(rgba(18, 16, 16, 0.5), rgba(27, 23, 23, 0.4)),url('./assets/images/bgimage.jpg'); background-repeat: no-repeat; background-position:center; background-size: cover;"> -->
 
   <!--Printing the menu-list with a loop using bootstrap cards-->
 
@@ -20,11 +19,9 @@
 
             <!--when we click a product(dish) to see its index in the url with the routerlink. 
     Showing buttons if availability is true. If==false, hide the button and message diplayed "Not available"-->
-            <div
-              class="card-title text-start"
-              *ngIf="value.availability == true"
-            >
-              <button routerLink="details/{{ i }}" class="btn">Details</button>
+            <div class="card-title text-start"
+              *ngIf="value.availability == true">
+              <button routerLink="/details/{{ i }}" class="btn">Details</button>
               <button type="button" class="btn add" (click)="addToCart(value)">
                 Order Now
               </button>

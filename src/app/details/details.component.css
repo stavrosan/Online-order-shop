@@ -86,35 +86,12 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .back {
-    position: absolute;
-    text-decoration-line: none;
-    background-color: rgb(255, 255, 255);
-    transition: all 200ms ease;
     right: 20%;
     top: 95%;
-    margin-right: 10px;
-    border: solid black;
-    padding: 5px 3px;
-    font-size: 1.2rem;
-    width: 7em;
-    border-radius: 1rem;
-    color: black;
-    cursor: pointer;
   }
 
   .add {
-    position: absolute;
-    cursor: pointer;
-    color: whitesmoke;
-    background-color: lightcoral;
-    transition: all 200ms ease;
-    right: 5%;
     top: 95%;
-    border: solid black;
-    padding: 5px 3px;
-    font-size: 1.2rem;
-    width: 7em;
-    border-radius: 1rem;
   }
 }
 

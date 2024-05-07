@@ -104,20 +104,13 @@ h1 {
   }
 
   .imgBg {
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 30vh;
     width: 100%;
-    background-position: center;
-    position: relative;
-    background-color: black;
   }
 
   .mb-3 {
     margin-top: 1vh;
-    font-family: "Great Vibes", cursive;
     font-size: 7vh;
-    color: aliceblue;
   }
 
   .btn {
@@ -169,21 +162,14 @@ h1 {
   }
 
   .imgBg {
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 35vh;
     width: 100%;
-    background-position: center;
-    position: relative;
-    background-color: black;
     margin-bottom: 5px;
   }
 
   .mb-3 {
     margin-top: 5px;
-    font-family: "Great Vibes", cursive;
     font-size: 5vh;
-    color: aliceblue;
   }
 
   .btn {
