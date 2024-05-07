@@ -20,7 +20,7 @@
     Showing buttons if availability is true. If==false, hide the button and message diplayed "Not available"-->
             <div class="text-start"
               *ngIf="value.availability == true">
-              <button routerLink="/details/{{ i }}" class="btn">Details</button>
+              <button routerLink="/details/{{ i }}" class="btn det">Details</button>
               <button type="button" class="btn add" (click)="addToCart(value)">
                 Order Now
               </button>
