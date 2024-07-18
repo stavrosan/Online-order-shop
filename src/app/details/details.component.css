@@ -27,7 +27,7 @@
   margin-bottom: -80px;
   height: 250px;
   width: 100%;
-  background-color: rgb(204, 218, 209);
+  background-color: rgb(215, 220, 217);
   color: black;
   padding: 10px;
 }
@@ -69,6 +69,11 @@
   cursor: pointer;
 }
 
+.back:hover{
+  background-color: black;
+  color: white;
+}
+
 .add {
   position: absolute;
   cursor: pointer;
@@ -82,6 +87,11 @@
   font-size: 1.2rem;
   width: 7em;
   border-radius: 1rem;
+}
+
+.add:hover{
+  background-color: green;
+  color: #fff;
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
