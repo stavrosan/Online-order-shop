@@ -1,12 +1,13 @@
 
   <!--Printing the menu-list with a loop using bootstrap cards-->
-
+  <body class="imgBg" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+  url(./assets/images/restaurantBg.jpg);">
   <div class="container">
     <h1 class="display-1">Our specialties</h1>
     <h3 class="text-center" style="color: rgb(198, 222, 40); padding: 10px">
-      Order over 40€ and get 15% discount
+      Order over 40€ and get 15 <i class="fa-solid fa-percent"></i> discount
     </h3>
-    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+    <div class="row row-cols-1 row-cols-xl-3 row-cols-lg-3 row-cols-md-2 row-cols-sm-2 row-cols-xs-1">
       <div *ngFor="let value of menuArr; index as i">
         <div class="card text-left">
           <img src="{{ value.image }}" alt="dish" />
@@ -33,3 +34,4 @@
     </div>
   </div>
 </div>
+</body>

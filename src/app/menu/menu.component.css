@@ -1,8 +1,19 @@
 .display-1 {
   font-family: "Great Vibes", cursive;
-  color: black;
+  color: white;
   text-align: center;
-  padding: 20px 0;
+  padding-top: 30px;
+}
+
+.imgBg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  position: relative;
+  background-color: black;
+  background-attachment: fixed;
 }
 
 .det {
@@ -16,6 +27,11 @@
   cursor: pointer;
 }
 
+.det:hover{
+  background-color: black;
+  color: white;
+}
+
 .add {
   background-color: lightcoral;
   border: solid black;
@@ -25,6 +41,11 @@
   border-radius: 1rem;
   color: whitesmoke;
   cursor: pointer;
+}
+
+.add:hover{
+  background-color: rgb(108, 156, 108);
+  color: white;
 }
 
 .card {
