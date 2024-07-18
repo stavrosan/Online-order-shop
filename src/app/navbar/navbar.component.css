@@ -20,14 +20,14 @@
   left: 0;
   height: 2px;
   background-color: #f4eded;
-  top: 70%;
+  top: 75%;
   transition: 0.8s;
 }
 
 .nav-link:hover::before {
   background-color: #7c7474;
   width: calc(100% + 1px);
-  height: 5%;
+  height: 8%;
   transform: rotate(0deg);
 }
 
