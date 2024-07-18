@@ -3,22 +3,18 @@
 <div class="hero">
   <div
     class="p-5 text-center imgBg"
-    style="
-      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-        url(&quot;./assets/images/hero.jpg&quot;);
+    style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+        url(./assets/images/restaurantBg.jpg);
       background-attachment: fixed;
-      background-position: center;
-    "
-  >
+      background-position: center;">
     <div class="d-flex justify-content-center">
       <div class="mask">
         <div class="text-black">
           <h1 class="mb-3">Ristorante Il Gambero Rosso</h1>
           <h3>Delivering great food for more than 18 years!</h3>
-          <a routerLink="/menu"
-            ><button class="btn btn-success">Our menu</button></a
-          >
-          <button class="btn btn-success active">Book a table</button>
+          <a routerLink="/menu">
+          <button class="btn menu">Our menu <i class="fa-solid fa-bars"></i></button></a>
+          <button class="btn book">Book a table <i class="fa-solid fa-table"></i></button>
         </div>
       </div>
     </div>

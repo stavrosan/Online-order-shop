@@ -32,6 +32,44 @@ h1 {
   margin-right: 6px;
 }
 
+.menu{
+    font-size: 1rem;
+    font-weight: bold;
+    display: inline-block;
+    color: rgb(244, 235, 235);
+    background-color: #939393;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.5rem 1rem;
+    transition: all 0.1s ease-in;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.menu:hover{
+  background-color: rgb(203, 23, 23);
+  border: solid white;
+  color: white;
+}
+
+.book {
+  font-size: 1rem;
+  font-weight: bold;
+  display: inline-block;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 1rem;
+  transition: all 0.1s ease-in;
+  margin-top: 1rem;
+}
+.book:hover {
+  background-color: black;
+  border: solid rgb(203, 23, 23);
+  color: white;
+}
+
 .container1 {
   display: flex;
   justify-content: center;
@@ -104,7 +142,7 @@ h1 {
   }
 
   .imgBg {
-    height: 30vh;
+    height: 33vh;
     width: 100%;
   }
 
@@ -113,9 +151,13 @@ h1 {
     font-size: 7vh;
   }
 
-  .btn {
-    font-size: 10px;
+  .menu{
+    font-size: .5rem;
     margin-right: 6px;
+  }
+
+  .book{
+    font-size: .5rem;
   }
 
   h1 {
@@ -162,19 +204,25 @@ h1 {
   }
 
   .imgBg {
-    height: 35vh;
+    height: 38vh;
     width: 100%;
     margin-bottom: 5px;
   }
 
   .mb-3 {
+    width: 100%;
     margin-top: 5px;
     font-size: 5vh;
   }
 
-  .btn {
-    font-size: 8px;
-    margin-right: 6px;
+  
+  .menu{
+    font-size: .5rem;
+    margin-right: 3px;
+  }
+
+  .book{
+    font-size: .5rem;
   }
 
   .feels {
