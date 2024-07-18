@@ -1,13 +1,40 @@
 .navbar {
-  background-color: rgba(244, 242, 242, 0.984);
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #aeb6ba 100%);
   z-index: 1;
 }
 
-a {
+.nav-link {
+  position: relative;
+  text-decoration-line: none;
+  color: black;
+  text-align: center;
+  font-size: 2rem;
   font-weight: bold;
-  font-size: 5vh;
   font-family: "Great Vibes";
 }
+
+.nav-link::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  left: 0;
+  height: 2px;
+  background-color: #f4eded;
+  top: 70%;
+  transition: 0.8s;
+}
+
+.nav-link:hover::before {
+  background-color: #7c7474;
+  width: calc(100% + 1px);
+  height: 5%;
+  transform: rotate(0deg);
+}
+
+.navbar-brand {
+   font-size: 5vh;
+}
+
 
 @media screen and (max-width: 480px) {
   .navbar {
@@ -15,13 +42,13 @@ a {
     background-color: rgba(244, 242, 242, 0.984);
   }
 
-  .navbrar-nav {
-    background-color: whitesmoke;
-  }
-
-  a {
+  .nav-link {
+    position: relative;
+    text-decoration-line: none;
+    color: black;
+    text-align: center;
+    font-size: 1rem;
     font-weight: bold;
-    font-size: 3vh;
     font-family: "Great Vibes";
   }
 }
