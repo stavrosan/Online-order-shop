@@ -10,6 +10,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 - Total amount of cart items and the whole cart total are calculated upon updates in cart items (15% discount in total amount when total>=40).
 - Responsive design.
 
+[![Visit Website](https://img.shields.io/badge/Visit-Website-blue)](https://online-order-shop.netlify.app/)
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
